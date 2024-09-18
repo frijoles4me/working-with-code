@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card View</title>
+</head>
+<style>
+.card{
+    width: 200px;
+}
+
+.card .face1{
+    border-bottom: solid 1px;
+    height: 130px;
+    background-color: #86d9ff;
+    position: relative;
+    display:flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        transform: translateY(100px);
+}
+
+.card .face1:hover{
+    transform: translateY(0px);
+    transition: 1s;
+}
+
+.card .face2{
+    height: 100px;
+    position: relative;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+}
+
+
+</style>
+<body>
+    <div class = 'contianer'>
+        <div class = 'card'>
+            <div class = 'face1'>
+                <div class = 'content1'>
+                    <div class="icon">
+                        <img src="/img/home.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class = 'face2'>
+                <div class="content2">
+                    <h3>
+                        <a href="#" target="_blank">card</a>
+                    </h3>
+                    <div>This is a card where I have a line to my social media profile.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
